@@ -11,13 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => {
     return (
         <>
-            <Router>
-                <Routes>
-                    <Route path='/' element={<Portfolio/>} />
-                    <Route path='/jor' element={<Jor/>} />
-                    <Route path='/invest' element={<Invest/>} />  
-                </Routes>
-            </Router>
+            <Jor />
         </>
     );
 };

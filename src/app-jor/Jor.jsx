@@ -1,5 +1,4 @@
 import React from 'react';
-import { useRef } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Counter from './components/Counter';
 import Map from './components/Map';
