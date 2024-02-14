@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+
+.counter-container * {
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1; 
+}
+
+.counter-content {
+    padding: 20px 0;
+}
+
+.title, .since {
+    font-weight: 400;
+}
+
+.time {
+    font-weight: 900;
+}
+
+.since {
+    font-style: italic;
+}
+
+.counter-container p {
+    opacity: 0;
+    transform: translateY(20px); 
+}
+  
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.counter-container * {
+animation: fadeInDown 2s ease forwards;
+}
+
+.counter-container p:nth-child(1) { animation-delay: 0.2s; }
+.counter-container p:nth-child(2) { animation-delay: 0.4s; }
+.counter-container p:nth-child(3) { animation-delay: 0.6s; }
+.counter-container p:nth-child(4) { animation-delay: 0.8s; }
+.counter-container p:nth-child(5) { animation-delay: 1.0s; }
+.counter-container p:nth-child(6) { animation-delay: 1.2s; }
+.counter-container p:nth-child(7) { animation-delay: 1.4s; }

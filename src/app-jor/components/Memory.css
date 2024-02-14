@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700');
+
+.memory {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+
+    font-family: 'Kalam', cursive;
+    color: #232C33;
+
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.memory img {
+    width: 180px;
+    height: 250px;
+    margin: 15px;
+    border: white 5px solid;
+    object-fit: cover;
+}
+
+.memory.left img {
+    transform: rotate(-5deg);
+}
+
+.memory.right img {
+    transform: rotate(5deg);
+}
+
+.memory h2 {
+    font-weight: 700;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+    position: relative;
+}
+
+.left .dot {
+    position: absolute;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #232C33;
+}
+
+.right .dot {
+    position: absolute;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: -20px;
+    transform: translateX(-50%);
+    background-color: #232C33;
+}
+
+@media screen and (max-width: 1000px) {
+    .memory {
+        font-size: 0.6em;
+    }
+    .memory img {
+        width: 90px;
+        height: 125px;
+        margin: 15px;
+        border: white 5px solid;
+    }
+    .right {
+        left: 0;
+    }
+    .left .dot {
+        left: -20px;
+    }
+}
+  
