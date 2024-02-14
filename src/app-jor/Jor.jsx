@@ -6,6 +6,12 @@ import Memory from './components/Memory';
 import './Jor.css';
 import sketchImage from './assets/sketch.png'; 
 
+import memory1 from './assets/1.jpg';
+import memory2 from './assets/2.jpg';
+import memory3 from './assets/3.jpg';
+import memory4 from './assets/4.jpg';
+import memory5 from './assets/5.jpg';
+
 function Jor() {
   return (
     <div>
@@ -25,31 +31,31 @@ function Jor() {
           <p className="text-center">And since then, we've had...</p>
           <div className="timeline">
             <Memory
-              image="/src/app-jor/assets/1.jpg"
+              image={memory1}
               title="Our First Date"
               text={`on 7/1/2023`}
               left={true}
             />
             <Memory
-              image="/src/app-jor/assets/2.jpg"
+              image={memory2}
               title={`Our First "Picture"`}
               text="at the USG Office"
               left={false}
             />
             <Memory
-              image="/src/app-jor/assets/3.jpg"
+              image={memory3}
               title="Our First Matchy"
               text="with our checkered flannels"
               left={true}
             />
             <Memory
-              image="/src/app-jor/assets/4.jpg"
+              image={memory4}
               title="Our First Kiss"
               text="on 12/23/2023"
               left={false}
             />
             <Memory
-              image="/src/app-jor/assets/5.jpg"
+              image={memory5}
               title="Our First Valentine's"
               text="at Pinto Art Museum"
               left={true}
